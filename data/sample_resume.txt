@@ -1,0 +1,19 @@
+RAHUL MEHTA
+Surat, Gujarat | rahul.mehta@example.com | github.com/rahulmehta
+
+SUMMARY
+Final-year B.Tech Computer Engineering student with interest in data science and machine learning.
+
+EDUCATION
+B.Tech Computer Engineering, 2022 - 2026, CGPA 8.4
+
+SKILLS
+Python, SQL, Pandas, NumPy, Scikit-learn, Git, HTML, CSS, MySQL, Machine Learning
+
+PROJECTS
+- Student Performance Predictor: Built a regression model using Python and Scikit-learn.
+- Library Management System: Developed with Python and MySQL.
+- Portfolio website using HTML and CSS.
+
+INTERNSHIP
+- Data Analyst Intern (2 months): cleaned datasets using Pandas and built weekly reports in Excel.

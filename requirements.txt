@@ -1,0 +1,11 @@
+# --- runtime ---
+langchain>=1.0
+langgraph>=1.0
+langchain-openai>=1.0
+python-dotenv>=1.0
+pypdf>=4.0
+python-docx>=1.1
+flask>=3.0
+# --- only for tests / building the PDF report and diagram (optional) ---
+reportlab>=4.0
+matplotlib>=3.8

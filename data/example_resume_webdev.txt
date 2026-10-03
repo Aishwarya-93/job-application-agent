@@ -1,0 +1,15 @@
+MEERA PATEL
+Ahmedabad, Gujarat | meera.patel@example.com
+
+SUMMARY
+Frontend-focused B.Sc. IT graduate who builds responsive web apps.
+
+SKILLS
+JavaScript, React, HTML, CSS, Node.js, Git, REST APIs
+
+PROJECTS
+- Online Shop UI: built with React and CSS, consuming REST APIs.
+- Portfolio website using HTML and CSS.
+
+INTERNSHIP
+- Web Developer Intern (3 months): built React components and fixed UI bugs using Git.

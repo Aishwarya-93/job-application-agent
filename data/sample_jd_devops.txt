@@ -1,0 +1,16 @@
+Job Title: DevOps Engineer (Fresher)
+Company: Example Cloud Pvt. Ltd.
+
+Required Skills:
+- Docker
+- Kubernetes
+- AWS
+- Terraform
+- CI/CD pipelines
+- Linux
+- Python
+- Git
+
+Preferred Skills:
+- Jenkins
+- Azure

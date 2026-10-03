@@ -1,0 +1,86 @@
+========================================================================
+AGENT SESSION  2026-10-03 18:50:36   LLM: OFFLINE rule-based stand-in (not a real LLM)
+========================================================================
+
+Goal received:
+  Analyze my resume at 'data/example_resume_webdev.txt' against the job description at 'data/example_jd_frontend.txt'. Tell me how well they match and how I can improve.
+
+Step 1:
+  Agent decision : I need the resume and job description before any analysis.
+  Tool selected  : load_documents
+  Tool input     : {"resume_path": "data/example_resume_webdev.txt", "jd_path": "data/example_jd_frontend.txt"}
+  Observation    : Resume (61 words) and job description (36 words) loaded into working memory.
+
+Step 2:
+  Agent decision : Documents are loaded; next I compare skills.
+  Tool selected  : analyze_skill_gap
+  Tool input     : {}
+  Observation    : 8 required skills identified: 6 matched, 2 missing (Docker, AWS). Preferred: 0/2 matched.
+
+Step 3:
+  Agent decision : Gap analysis is done; next I compute the score.
+  Tool selected  : calculate_match_score
+  Tool input     : {}
+  Observation    : Resume-JD Skill Match Score: 75% (6 of 8 required skills; strong overlap).
+
+Step 4:
+  Agent decision : I have the score; now I write the improvement report.
+  Tool selected  : generate_report
+  Tool input     : {"recommendations": ["Add a project or coursework bullet that shows hands-on Docker.", "Add a project or coursework bullet that shows hands-on AWS."], "learning_areas": ["Docker: take an introductory tutorial, then use i
+  Observation    : Report generated and saved to outputs/improvement_report.md
+
+Final response to user:
+  Analysis complete. The report was saved to outputs/improvement_report.md.
+  
+  # Resume-JD Analysis Report
+  
+  ## Resume-JD Skill Match Score
+  **75%** (6 of 8 required skills matched - strong overlap).
+  This is a keyword-overlap indicator for learning purposes, not a hiring prediction.
+  
+  ## Matched Skills
+  - JavaScript
+  - React
+  - HTML
+  - CSS
+  - Node.js
+  - REST APIs
+  
+  ## Missing Skills
+  - Docker
+  - AWS
+  
+  Preferred skills matched: none  |  missing: Kubernetes, CI/CD
+  
+  ## Relevant Experience
+  - Online Shop UI: built with React and CSS, consuming REST APIs.  _(shows: REST APIs, React, CSS)_
+  - Portfolio website using HTML and CSS.  _(shows: HTML, CSS)_
+  - Web Developer Intern (3 months): built React components and fixed UI bugs using Git.  _(shows: React)_
+  
+  ## Major Gaps
+  Top gaps, in the order the job description lists them:
+  - Docker
+  - AWS
+  
+  ## Recommended Resume Improvements
+  - Add a project or coursework bullet that shows hands-on Docker.
+  - Add a project or coursework bullet that shows hands-on AWS.
+  
+  ## Suggested Learning Areas
+  - Docker: take an introductory tutorial, then use it in a small project.
+  - AWS: take an introductory tutorial, then use it in a small project.
+  - Kubernetes: take an introductory tutorial, then use it in a small project.
+  - CI/CD: take an introductory tutorial, then use it in a small project.
+  
+  ## Overall Summary
+  Your resume covers 6 of 8 required skills. The main gaps are Docker, AWS. Closing these with honest, project-backed evidence is the most useful next step.
+
+(tools used this turn: load_documents, analyze_skill_gap, calculate_match_score, generate_report)
+
+Follow-up received:
+  What are my three biggest skill gaps?
+
+Final response to user:
+  From the analysis I already did (no need to re-read the files), your biggest gaps are: Docker, AWS. They are listed in the order the job description mentions them.
+
+(tools used this turn: none - answered from memory)

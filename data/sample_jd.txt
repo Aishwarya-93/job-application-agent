@@ -1,0 +1,22 @@
+Job Title: Junior Data Scientist
+Company: Example Analytics Pvt. Ltd.
+
+About the role:
+We are looking for a Junior Data Scientist to build and deploy machine learning models.
+
+Required Skills:
+- Python
+- SQL
+- Machine Learning
+- Pandas and NumPy
+- Scikit-learn
+- Data Visualization (Matplotlib, Tableau)
+- Statistics
+- Docker
+- Git
+
+Preferred Skills (Nice to have):
+- AWS
+- TensorFlow or PyTorch
+- Deep Learning
+- Power BI

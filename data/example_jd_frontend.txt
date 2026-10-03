@@ -1,0 +1,16 @@
+Job Title: Frontend Developer
+Company: Example Web Studio
+
+Required Skills:
+- JavaScript
+- React
+- HTML
+- CSS
+- Node.js
+- REST APIs
+- Docker
+- AWS
+
+Preferred Skills (Nice to have):
+- Kubernetes
+- CI/CD

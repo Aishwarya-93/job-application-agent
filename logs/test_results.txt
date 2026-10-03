@@ -1,0 +1,35 @@
+PASS  1. Normal analysis (4 tools, in order, report saved, score 70%)
+PASS  3. Follow-up answered from memory (no tools re-run)
+PASS  3b. Second follow-up recalls score
+PASS  2. Missing skills detected on DevOps JD (score 25%)
+PASS  4a. Missing resume file -> clear error, no report, no crash
+PASS  4b. CLI with missing file -> exit code != 0, message, no traceback
+PASS  4c. Empty resume file -> clear error
+PASS  4d. No files given -> agent asks for them, calls no tools
+PASS  5. Tool failure handled gracefully (error explained, run stops cleanly)
+PASS  6. Tool called before prerequisites -> error message, not exception
+PASS  7. PDF resume is read correctly
+PASS  8. Live mode without API key -> friendly message, no traceback
+PASS  9. UI: TXT resume + pasted JD -> analysis (score 83%, missing Docker)
+PASS  9b. UI: execution trace has goal -> 4 tool steps -> final, with tool names
+PASS  9c. UI: recommendations, learning areas and summary come back for display
+PASS  10. UI follow-up answered from memory about the uploaded files (no tools re-run)
+PASS  10b. Follow-up before any analysis -> clear message
+PASS  11. Report downloads and contains the uploaded resume's content, not sample data
+PASS  12. Different resume + JD -> different output (DevOps: 100%, nothing missing)
+PASS  12b. Same JD, other resume -> score changes (web resume vs DevOps JD: 0%, 5+ missing)
+PASS  12c. Demo fallback still works (sample files: 70%)
+PASS  12d. New analysis replaces the old report (no stale content)
+PASS  13. DOCX resume (incl. table text) is read: Docker, Statistics, Data Visualization matched
+PASS  13b. PDF resume + pasted JD works
+PASS  14a. No resume -> 400 with message
+PASS  14b. No JD -> 400 with message
+PASS  14c. JD as file AND text -> 400 (ambiguous)
+PASS  14d. Unsupported file type -> 400
+PASS  14e. Empty resume file -> 400, no agent run
+PASS  14f. Corrupt PDF -> 400 friendly message
+PASS  14g. JD with no recognisable skills -> agent reports problem, no fake score
+PASS  15. Live mode without API key -> 503 with setup message (no traceback)
+PASS  15b. Uploaded files are deleted after the run
+PASS  16. tools.py / offline_llm.py never reference the sample files
+34/34 checks passed
